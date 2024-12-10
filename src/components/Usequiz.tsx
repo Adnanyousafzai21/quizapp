@@ -25,7 +25,7 @@ const useQuiz = () => {
 
   useEffect(() => {
     const shuffleArray = (array: string[]) => array.sort(() => Math.random() - 0.5);
-    const shuffled: QuestionInterface[] = questions.slice(0, 5).map((item) => {
+    const shuffled: QuestionInterface[] = questions.map((item) => {
       const decodedQuestion = decodeURIComponent(item.question)
       const allOptions = [...item.incorrect_answers, item.correct_answer];
       const decodedOptions = allOptions.map(decodeURIComponent);
