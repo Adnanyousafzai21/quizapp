@@ -1,8 +1,8 @@
 import React from 'react';
-import Progressbar from '@/components/Progressbar';
-import ResultComponent from '@/components/ResultComponent';
-import QuestionDefficulties from '@/components/QuestionDefficulties';
-import useQuiz from '@/components/Usequiz';
+import Progressbar from '@/components/home/components/Progressbar';
+import ResultComponent from '@/components/home/components/ResultComponent';
+import QuestionDefficulties from '@/components/home/components/QuestionDefficulties';
+import useQuiz from './components/Usequiz';
 
 const QuizApp = () => {
   const {
@@ -20,8 +20,7 @@ const QuizApp = () => {
     maxScore,
     scoreRatio,
   } = useQuiz();
-console.log("shufulled question",shuffledQuestions.length)
-console.log("currentquestion ",currentQuestionIndex)
+
   return (
     <div>
       <div className="w-full flex justify-center flex-col lg:h-screen min-h-screen items-center py-10">

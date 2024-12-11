@@ -1,4 +1,4 @@
-import QuizApp from "./quizpp";
+import QuizApp from "../components/home/Quizapp";
 
 
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import questions from './../components/questions.json';  // Your JSON file with questions
+import questions from '../../../data/questions.json'
 
 interface QuestionInterface {
   question: string;
