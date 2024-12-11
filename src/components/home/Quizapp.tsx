@@ -1,8 +1,8 @@
 import React from 'react';
-import Progressbar from '@/components/home/components/Progressbar';
-import ResultComponent from '@/components/home/components/ResultComponent';
-import QuestionDefficulties from '@/components/home/components/QuestionDefficulties';
+import ResultComponent from '@/components/home/components/Result';
+import QuestionDefficulties from '@/components/home/components/QuestionDifficulties';
 import useQuiz from './components/Usequiz';
+import ProgressBar from './components/Progressbar';
 
 const QuizApp = () => {
   const {
@@ -56,14 +56,14 @@ const QuizApp = () => {
                         onClick={handleNext}
                         className="rounded-md bg-gray-400 text-white px-4 py-2 hover:bg-slate-700 hover:text-white duration-600"
                       >
-                        {(currentQuestionIndex==shuffledQuestions.length-1)?"Finish":" Next Question"}
+                        {(currentQuestionIndex == shuffledQuestions.length - 1) ? "Finish" : " Next Question"}
                       </button>
                     </div>
                   )}
                 </div>
               </div>
             </div>
-            <Progressbar minScore={minScore} maxScore={maxScore} scoreRatio={scoreRatio} />
+            <ProgressBar minScore={minScore} maxScore={maxScore} scoreRatio={scoreRatio} />
           </div>
         )}
 

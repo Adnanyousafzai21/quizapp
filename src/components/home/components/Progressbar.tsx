@@ -1,12 +1,12 @@
 import React from 'react'
 
-type ProgressbarProps = {
+type ProgressBarProps = {
   minScore: number;
   maxScore: number;
   scoreRatio: number;
 };
 
-const Progressbar = ({ minScore, maxScore, scoreRatio}: ProgressbarProps) => {
+const ProgressBar = ({ minScore, maxScore, scoreRatio }: ProgressBarProps) => {
 
 
   return (
@@ -27,4 +27,4 @@ const Progressbar = ({ minScore, maxScore, scoreRatio}: ProgressbarProps) => {
   )
 }
 
-export default Progressbar
+export default ProgressBar

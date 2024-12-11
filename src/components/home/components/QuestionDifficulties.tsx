@@ -1,6 +1,6 @@
 import React from 'react';
 
-type QuestionDefficultiesProps = {
+type QuestionDifficultiesProps = {
   difficulty: 'easy' | 'medium' | 'hard';
 }
 
@@ -16,10 +16,10 @@ const starImages: starImagesProps = {
   hard: ["/images/star.png", "/images/star.png", "/images/star.png"]
 };
 
-const QuestionDefficulties = ({ difficulty }: QuestionDefficultiesProps) => {
+const QuestionDifficulties = ({ difficulty }: QuestionDifficultiesProps) => {
 
   const stars = starImages[difficulty];
-  
+
   return (
     stars ? (
       <div className="flex gap-2 items-center justify-center">
@@ -31,5 +31,5 @@ const QuestionDefficulties = ({ difficulty }: QuestionDefficultiesProps) => {
   );
 };
 
-export default QuestionDefficulties;
+export default QuestionDifficulties;
 
