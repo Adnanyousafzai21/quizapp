@@ -22,8 +22,6 @@ const ResultComponent = ({ minScore, maxScore, scoreRatio, correctAnswer, percen
       <StatCard label='Corrected Answer' value={correctAnswer} />
       <StatCard label="Wrong Answer" value={lengthOfQuestion-correctAnswer}/>
       <StatCard label="Score" value={percentage}/>
-      
-      <Progressbar minScore={minScore} maxScore={maxScore} scoreRatio={scoreRatio} />
       <button onClick={Restart} className="bg-gray-700 hover:bg-gray-600 text-white px-9 py-1 rounded-md">
         Restart
       </button>

@@ -4,9 +4,10 @@ type ProgressbarProps = {
   minScore: number;
   maxScore: number;
   scoreRatio: number;
+  result?: boolean
 };
 
-const Progressbar = ({ minScore, maxScore, scoreRatio }: ProgressbarProps) => {
+const Progressbar = ({ minScore, maxScore, scoreRatio, result }: ProgressbarProps) => {
 
   // console.log("this is the data", minScore, maxScore, scoreRatio)
   return (

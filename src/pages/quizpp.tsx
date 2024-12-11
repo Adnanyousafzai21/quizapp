@@ -20,7 +20,8 @@ const QuizApp = () => {
     maxScore,
     scoreRatio,
   } = useQuiz();
-
+console.log("shufulled question",shuffledQuestions.length)
+console.log("currentquestion ",currentQuestionIndex)
   return (
     <div>
       <div className="w-full flex justify-center flex-col lg:h-screen min-h-screen items-center py-10">
@@ -41,7 +42,7 @@ const QuizApp = () => {
                     <button
                       key={index}
                       onClick={() => handleAnswer(option)}
-                      className={`rounded-md bg-gray-200 px-2 py-1 border-2 w-[200px] break-words hover:bg-slate-700 hover:text-white duration-600 ${selectedAnswer === option ? 'bg-gray-700 text-white' : ''} ${disabled ? 'cursor-not-allowed' : ''}`}
+                      className={`rounded-md bg-gray-200 px-2 py-1 border-2 w-[200px] break-words duration-600 ${selectedAnswer === option ? 'bg-gray-700 text-white' : ''} ${disabled ? 'cursor-not-allowed hover:bg-none' : ' hover:bg-slate-700 hover:text-white'}`}
                       disabled={disabled}
                     >
                       {option}
@@ -56,7 +57,7 @@ const QuizApp = () => {
                         onClick={handleNext}
                         className="rounded-md bg-gray-400 text-white px-4 py-2 hover:bg-slate-700 hover:text-white duration-600"
                       >
-                        Next Question
+                        {(currentQuestionIndex==shuffledQuestions.length-1)?"Finish":" Next Question"}
                       </button>
                     </div>
                   )}
