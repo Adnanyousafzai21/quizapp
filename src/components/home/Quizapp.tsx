@@ -1,8 +1,8 @@
 import React from 'react';
 import ResultComponent from '@/components/home/components/Result';
 import QuestionDefficulties from '@/components/home/components/QuestionDifficulties';
-import useQuiz from './components/Usequiz';
-import ProgressBar from './components/Progressbar';
+import ProgressBar from './components/ProgressBar';
+import useQuiz from './components/UseQuiz';
 
 const QuizApp = () => {
   const {
