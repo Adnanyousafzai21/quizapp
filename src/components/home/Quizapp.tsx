@@ -79,7 +79,6 @@ const QuizApp = () => {
         )}
       </div>
     </div>
-  );
-};
-
+  )
+}
 export default QuizApp;

@@ -1,5 +1,4 @@
 import React from 'react'
-import Progressbar from './Progressbar'
 import StatCard from './StatCard';
 
 type Props = {
@@ -11,7 +10,7 @@ type Props = {
   lengthOfQuestion: number;
 };
 
-const ResultComponent = ({ minScore, maxScore, scoreRatio, correctAnswer, percentage, lengthOfQuestion }: Props) => {
+const ResultComponent = ({correctAnswer, percentage, lengthOfQuestion }: Props) => {
   const Restart = () => {
     window.location.reload()
   };

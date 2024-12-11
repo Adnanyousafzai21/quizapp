@@ -4,12 +4,11 @@ type ProgressbarProps = {
   minScore: number;
   maxScore: number;
   scoreRatio: number;
-  result?: boolean
 };
 
-const Progressbar = ({ minScore, maxScore, scoreRatio, result }: ProgressbarProps) => {
+const Progressbar = ({ minScore, maxScore, scoreRatio}: ProgressbarProps) => {
 
-  // console.log("this is the data", minScore, maxScore, scoreRatio)
+
   return (
     <div className="w-full flex justify-center items-center">
       <div className='w-[80%]'>
